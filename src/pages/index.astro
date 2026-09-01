@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Hero from '../components/Hero.astro';
+import Trades from '../components/Trades.astro';
+import Projects from '../components/Projects.astro';
+import Process from '../components/Process.astro';
+import Area from '../components/Area.astro';
+import Contact from '../components/Contact.astro';
+import { site } from '../data/site';
+---
+<BaseLayout>
+  <Header />
+  <main id="main">
+    {site.sections.hero && <Hero />}
+    {site.sections.trades && <Trades />}
+    {site.sections.projects && <Projects />}
+    {site.sections.process && <Process />}
+    {site.sections.area && <Area />}
+    {site.sections.contact && <Contact />}
+  </main>
+  <Footer />
+</BaseLayout>

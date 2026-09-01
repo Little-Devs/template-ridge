@@ -1,0 +1,85 @@
+{
+  "id": "ridge",
+  "name": "Ridge Trades",
+  "description": "Mountain-state general contractor landing. Navy, safety amber, and concrete. Light-custom: logo, colours, fonts, copy, and section on/off.",
+  "category": "landing-page",
+  "subcategory": "contractor",
+  "repository": "https://github.com/Little-Devs/template-ridge",
+  "demoUrl": "https://ridge.little.website/",
+  "previewImage": "",
+  "techStack": {
+    "framework": "Astro",
+    "version": "5.17.1",
+    "styling": "CSS variables",
+    "scripting": "TypeScript",
+    "buildTool": "Vite"
+  },
+  "features": [
+    "Mountain-state general contractor landing",
+    "Light-custom: logo, colours, fonts, and copy",
+    "Section on/off for hero, trades, projects, process, area, and contact",
+    "Navy, safety amber, and concrete palette",
+    "Industrial condensed display type",
+    "Fully responsive Astro SSG"
+  ],
+  "aesthetic": {
+    "style": "Industrial contractor",
+    "description": "Mountain-state general contractor landing",
+    "fonts": {
+      "display": "Barlow Condensed",
+      "body": "Source Sans 3",
+      "sans": "Source Sans 3",
+      "primary": "Barlow Condensed"
+    },
+    "colors": {
+      "primary": "#0b1d33",
+      "primaryName": "Navy",
+      "accent": "#f0b429",
+      "accentName": "Safety amber",
+      "background": "#e6e2d8",
+      "backgroundName": "Concrete",
+      "navy": "#0b1d33",
+      "amber": "#f0b429",
+      "concrete": "#e6e2d8",
+      "steel": "#4a5560"
+    }
+  },
+  "sections": [
+    "Hero",
+    "Trades",
+    "Projects",
+    "Process",
+    "Area",
+    "Contact"
+  ],
+  "useCases": [
+    "General contractors",
+    "Trade businesses",
+    "Construction firms",
+    "Regional builders"
+  ],
+  "customization": {
+    "difficulty": "easy",
+    "colorScheme": "CSS variables",
+    "typography": "Google Fonts (Barlow Condensed, Source Sans 3)",
+    "layout": "CSS Grid + Flexbox"
+  },
+  "performance": {
+    "framework": "Astro (SSG)",
+    "cssOnly": "Most animations",
+    "lighthouse": "90+"
+  },
+  "license": "MIT",
+  "author": "Little-Devs",
+  "createdAt": "2026-09-01",
+  "lastUpdated": "2026-09-01",
+  "tags": [
+    "landing-page",
+    "contractor",
+    "trades",
+    "construction",
+    "astro",
+    "ssg"
+  ],
+  "version": "1.0.0"
+}
