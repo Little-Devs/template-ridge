@@ -1,0 +1,18 @@
+---
+import { site } from '../data/site';
+const { process } = site;
+---
+<section class="wrap section" id="process">
+  <div class="section-head">
+    <p class="kicker">{process.kicker}</p>
+    <h2>{process.title}</h2>
+  </div>
+  <div class="process">
+    {process.steps.map((step) => (
+      <article class="step">
+        <h3>{step.title}</h3>
+        <p>{step.body}</p>
+      </article>
+    ))}
+  </div>
+</section>

@@ -1,0 +1,25 @@
+---
+import { site } from '../data/site';
+const { hero } = site;
+---
+<section class="hero-band" id="top">
+  <div class="wrap hero">
+    <div>
+      <p class="kicker">{hero.kicker}</p>
+      <h1>{hero.title}</h1>
+      <p class="hero-lead">{hero.lead}</p>
+      <div class="actions">
+        <a class="btn" href={hero.primaryCta.href}>{hero.primaryCta.label}</a>
+        <a class="btn btn-ghost" href={hero.secondaryCta.href}>{hero.secondaryCta.label}</a>
+      </div>
+    </div>
+    <div class="facts">
+      {hero.facts.map((fact) => (
+        <div class="fact">
+          <b>{fact.value}</b>
+          <span>{fact.label}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,22 @@
+---
+import { site } from '../data/site';
+const { projects } = site;
+---
+<section class="wrap section" id="projects">
+  <div class="section-head">
+    <p class="kicker">{projects.kicker}</p>
+    <h2>{projects.title}</h2>
+  </div>
+  <div class="job-stripes">
+    {projects.items.map((item) => (
+      <article class={`job ${item.tone}`}>
+        <div class="job-media" aria-hidden="true"></div>
+        <div class="job-body">
+          <p class="tag">{item.tag}</p>
+          <h3>{item.title}</h3>
+          <p>{item.note}</p>
+        </div>
+      </article>
+    ))}
+  </div>
+</section>

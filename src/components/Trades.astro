@@ -1,0 +1,21 @@
+---
+import { site } from '../data/site';
+const { trades } = site;
+---
+<section class="wrap section" id="trades">
+  <div class="section-head">
+    <p class="kicker">{trades.kicker}</p>
+    <h2>{trades.title}</h2>
+  </div>
+  <div class="trade-list">
+    {trades.items.map((item) => (
+      <article class="trade">
+        <span class="num">{item.num}</span>
+        <div>
+          <h3>{item.title}</h3>
+          <p>{item.body}</p>
+        </div>
+      </article>
+    ))}
+  </div>
+</section>
