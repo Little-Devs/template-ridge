@@ -1,0 +1,14 @@
+---
+import { site } from '../data/site';
+const { area } = site;
+---
+<section class="wrap section" id="area">
+  <p class="kicker">{area.kicker}</p>
+  <h2>{area.title}</h2>
+  <div class="towns">
+    {area.towns.map((town) => (
+      <span class="town">{town}</span>
+    ))}
+  </div>
+  <p>{area.note}</p>
+</section>

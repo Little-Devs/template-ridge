@@ -1,0 +1,29 @@
+---
+import { site } from '../data/site';
+const { contact, logo } = site;
+---
+<section class="contact-band" id="contact">
+  <div class="wrap contact">
+    <div>
+      <p class="kicker">Estimate</p>
+      <h2>Write the job. We reply with a walk time.</h2>
+      <p>No accounts, no payments, no scheduling widget. A mail client is enough.</p>
+      <ul class="meta-list">
+        <li><span>Phone</span><span>{contact.phone}</span></li>
+        <li><span>License</span><span>{contact.license}</span></li>
+        <li><span>Insurance</span><span>{contact.insurance}</span></li>
+        <li><span>Yard</span><span>{contact.address}</span></li>
+      </ul>
+      <a class="btn" href={`mailto:${contact.email}?subject=Estimate%20request`}>{contact.email}</a>
+    </div>
+    <form class="estimate" action={`mailto:${contact.email}`} method="post" enctype="text/plain">
+      <label for="who">Name</label>
+      <input id="who" name="name" required />
+      <label for="where">Address or town</label>
+      <input id="where" name="where" required />
+      <label for="job">What needs doing</label>
+      <textarea id="job" name="job" rows="4" required></textarea>
+      <button class="btn" type="submit">Open mail for {logo.text}</button>
+    </form>
+  </div>
+</section>
